@@ -1,0 +1,174 @@
+.d-item{
+    flex: 1;
+    height: 100%;
+    margin-right: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--light-red-study);
+}
+
+.d-item-top{
+    height: 50px;
+    background: no-repeat url('/icon-play.svg');
+    background-position: 90% 45%;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.3;
+}
+
+.d-item-bottom{
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.d-item-menu{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.d-item-menu-item{
+    font-weight: 600;
+}
+
+.d-item-time{
+    margin-top: 40px;
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+}
+
+.d-item-info{
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+/* Work */
+
+.d-item-work{
+    flex: 1;
+    height: 100%;
+    margin-right: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--light-red-work);
+}
+
+.d-item-work-top{
+    height: 50px;
+    background: no-repeat url('/icon-work.svg');
+    background-position: 90% 45%;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.3;
+}
+
+/* Play */
+
+.d-item-play{
+    flex: 1;
+    height: 100%;
+    margin-right: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--soft-blue-play);
+}
+
+.d-item-play-top{
+    height: 50px;
+    background: no-repeat url('/icon-play.svg');
+    background-position: 90% 45%;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.3;
+}
+
+/* Study */
+
+.d-item-study{
+    flex: 1;
+    height: 100%;
+    margin-right: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--light-red-study);
+}
+
+.d-item-study-top{
+    height: 50px;
+    background: no-repeat url('/icon-study.svg');
+    background-position: 90% 45%;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.3;
+}
+
+/* Exercise */
+
+.d-item-exercise{
+    flex: 1;
+    height: 100%;
+    margin-right: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--lime-green-exercise);
+}
+
+.d-item-exercise-top{
+    height: 50px;
+    background: no-repeat url('/icon-exercise.svg');
+    background-position: 90% 45%;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.3;
+}
+
+/* Social */
+
+.d-item-social{
+    flex: 1;
+    height: 100%;
+    margin-right: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--violet-social);
+}
+
+.d-item-social-top{
+    height: 50px;
+    background: no-repeat url('/icon-social.svg');
+    background-position: 90% 45%;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.3;
+}
+
+/* Self Care */
+
+.d-item-self-care{
+    flex: 1;
+    height: 100%;
+    margin-right: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--soft-orange-selfcare);
+}
+
+.d-item-self-care-top{
+    height: 50px;
+    background: no-repeat url('/icon-self-care.svg');
+    background-position: 90% 45%;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.3;
+}

@@ -1,0 +1,102 @@
+.m-global{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50vh;    
+}
+
+.m-wrapper{
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.m-left{
+    flex: 1;
+    margin-right: 30px;
+}
+
+.m-right{
+    flex: 3;
+}
+
+/* Starting Profile (Must have a component) */
+
+.p-main{
+    width: 100%;
+    background-color: var(--very-dark-blue);
+}
+
+.p-wrapper{
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+
+}
+
+.p-top{
+
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+.p-image{
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.p-info{
+    margin-top: 20px;
+}
+
+.p-info-message{
+    color: var(--pale-blue);
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+.p-info-name{
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.p-bottom{
+    padding: 30px;
+}
+
+.p-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.p-item{
+    padding: 10px 0px;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.p-item:hover{
+    color: var(--pale-blue);
+}
+
+
+/* Dashboard CSS */
+.d-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.d-main-row{
+    display: flex;
+    margin-bottom: 20px;
+}
+

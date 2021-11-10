@@ -1,9 +1,11 @@
 import React from 'react'
+import './App.css';
+import Main from './components/main/Main';
 
 const App = () => {
   return (
-    <div>
-      
+    <div className="a-global">
+      <Main />
     </div>
   )
 }
