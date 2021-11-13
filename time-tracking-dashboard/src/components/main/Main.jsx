@@ -29,7 +29,7 @@ const Main = () => {
                 </div>
                 <div className="m-right">
                     <div className="d-main">
-                        <div className="d-main-row">
+                        <div className="d-main-row d-top-row">
                             <Item type="Work" time="32" lastTime="36"/>
                             <Item type="Play"time="10" lastTime="8"/>
                             <Item type="Study" time="4" lastTime="7"/>

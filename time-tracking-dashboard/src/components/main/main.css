@@ -2,14 +2,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 50vh;    
+    height: 100%;
+    align-items: center; 
 }
 
 .m-wrapper{
     width: 1440px;
     height: 100vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .m-left{
@@ -19,6 +20,7 @@
 
 .m-right{
     flex: 3;
+    
 }
 
 /* Starting Profile (Must have a component) */
@@ -93,10 +95,100 @@
 .d-main{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .d-main-row{
     display: flex;
+    width: 100%; 
+}
+
+.d-top-row{
     margin-bottom: 20px;
 }
 
+@media screen and (max-width:480px) {
+    .m-wrapper{
+      flex-direction:column;
+      width: 100%;
+      height: 100%;
+    }
+    .d-main{
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+
+      }
+    .d-main-row{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .d-top-row{
+        margin-bottom: 0px;
+    }
+
+    .p-wrapper{
+        width: 95%;
+        
+    }
+
+    .m-left{
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .p-main{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .m-right{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .p-top{
+        display: flex;
+        padding: 20px;
+    }
+    .p-image{
+        height: 100%;
+        width: 25%;
+        margin-right: 20px;
+    }
+    .p-info-message{
+        font-size: 0.8em;
+    }
+
+    .p-info-name{
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .p-list{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .p-bottom{
+        padding: 10px;
+    }
+
+    .p-item{
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        padding: 5px;
+    }
+  }

@@ -172,3 +172,13 @@
     filter: grayscale(100%) brightness(0);
     opacity: 0.3;
 }
+
+
+@media screen and (max-width:480px) {
+
+    .d-item-responsive{
+        margin: 0;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
