@@ -30,8 +30,10 @@ const Item = ({ type, time, lastTime }) => {
             <img src={Elipsis} alt="" className="d-elipsis" />
           </div>
         </div>
-        <div className="d-item-time">{time}hrs</div>
-        <div className="d-item-info">Last Week - {lastTime}hrs</div>
+        <div className="item-block">
+          <div className="d-item-time">{time}hrs</div>
+          <div className="d-item-info">Last Week - {lastTime}hrs</div>
+        </div>
       </div>
     </div>
   );

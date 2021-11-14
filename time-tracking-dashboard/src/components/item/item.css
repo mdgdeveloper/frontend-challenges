@@ -1,5 +1,4 @@
 .d-item{
-    flex: 1;
     height: 100%;
     margin-right: 30px;
     border-top-right-radius: 10px;
@@ -50,9 +49,9 @@
 /* Work */
 
 .d-item-work{
-    flex: 1;
+    flex-basis: 30%;
     height: 100%;
-    margin-right: 30px;
+    margin-right: 25px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 20px;
@@ -71,9 +70,9 @@
 /* Play */
 
 .d-item-play{
-    flex: 1;
+    flex-basis: 30%;
     height: 100%;
-    margin-right: 30px;
+    margin-right: 25px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 20px;
@@ -92,9 +91,9 @@
 /* Study */
 
 .d-item-study{
-    flex: 1;
+    flex-basis: 30%;
     height: 100%;
-    margin-right: 30px;
+    margin-right: 25px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 20px;
@@ -113,9 +112,10 @@
 /* Exercise */
 
 .d-item-exercise{
-    flex: 1;
+    flex-basis: 30%;
     height: 100%;
-    margin-right: 30px;
+    margin-right: 25px;
+    margin-top: 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 20px;
@@ -134,9 +134,10 @@
 /* Social */
 
 .d-item-social{
-    flex: 1;
+    flex-basis: 30%;
     height: 100%;
-    margin-right: 30px;
+    margin-right: 25px;
+    margin-top: 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 20px;
@@ -155,9 +156,10 @@
 /* Self Care */
 
 .d-item-self-care{
-    flex: 1;
+    flex-basis: 30%;
     height: 100%;
-    margin-right: 30px;
+    margin-right: 25px;
+    margin-top: 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 20px;
@@ -180,5 +182,50 @@
         margin: 0;
         margin-bottom: 20px;
         width: 90%;
+        flex-basis: 100%;
+    }
+
+    .item-block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .d-item-time{
+        margin: 0;
+        margin-top: 10px;
+        font-size: 35px;
+    }
+
+    .d-item-info{
+        font-weight: 300;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width:480px) and (max-width:1200px) {
+    .d-item-responsive{
+        margin: 0;
+        margin-bottom: 20px;
+        width: 90%;
+        flex-basis: 100%;
+    }
+
+    .item-block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .d-item-time{
+        margin: 0;
+        margin-top: 10px;
+        font-size: 35px;
+    }
+
+    .d-item-info{
+        font-weight: 300;
+        font-size: 15px;
     }
 }
