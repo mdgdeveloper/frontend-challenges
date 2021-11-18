@@ -1,0 +1,39 @@
+.t-main{
+    
+}
+
+.t-header{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    width: 100%;
+}
+
+.t-number{
+    color:white;
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+}
+
+.t-switch{
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--main-toggle-bg-1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.t-ball{
+    width: 12px;
+    height: 12px;
+    background-color: var(--red);
+    border-radius: 50%;
+}
+
+.t-no-show{
+    display: none;
+}
