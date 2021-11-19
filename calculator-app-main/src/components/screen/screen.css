@@ -1,0 +1,21 @@
+.s-main{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-text{
+    background-color: var(--screen-bg-1);
+    width: 480px;
+    padding: 30px;
+    text-align: right;
+    border-radius: 20px;
+}
+
+.s-value{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}

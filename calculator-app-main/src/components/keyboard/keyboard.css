@@ -1,0 +1,27 @@
+.k-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.k-wrapper{
+    background-color: var(--main-toggle-bg-1);
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.k-line{
+    display: flex;
+}
+
+.k-key{
+    flex: 1;
+    padding: 10px;
+}
+
+.k-big-key{
+    flex: 1;
+    padding: 10px;
+}

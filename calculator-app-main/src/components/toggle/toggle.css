@@ -32,7 +32,19 @@
     height: 12px;
     background-color: var(--red);
     border-radius: 50%;
+    transform: translateX(-20px);
+    transition: all ease 0.5s;
+
 }
+
+.t-ball-2{
+    transform: translateX(0px);
+}
+.t-ball-3{
+    transform: translateX(20px);
+}
+
+
 
 .t-no-show{
     display: none;

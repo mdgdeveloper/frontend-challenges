@@ -1,0 +1,43 @@
+/* 
+  --key-bg-1: hsl(225, 21%, 49%);
+  --key-bg-shadow-1: hsl(224, 28%, 35%);
+  --key-bg-toggle-1: hsl(6, 63%, 50%);
+  --key-bg-toggle-shadow-1: hsl(6, 70%, 34%);
+
+  --key-bg-orange-1: hsl(30, 25%, 89%);
+  --key-bg-orange-shadow-1: hsl(30, 25%, 89%);
+
+  --key-text: hsl(221, 14%, 31%);
+
+  --red: hsl(6, 63%, 50%);
+   */
+
+.key-main{
+    cursor: pointer;
+}
+
+.key-wrapper{
+    background-color: var(--key-main-shadow);
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.key-surface{
+    background-color: var(--key-main-bg);
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.key-value{
+    color: var(--key-text);
+    font-weight: 700;
+    height: 100%;
+    padding: 15px;
+    font-size: 30px;
+
+}
