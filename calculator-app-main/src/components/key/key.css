@@ -33,6 +33,10 @@
     
 }
 
+.key-surface:active{
+    transform: translateY(3px);
+}
+
 .key-value{
     color: var(--key-text);
     font-weight: 700;
@@ -41,3 +45,34 @@
     font-size: 30px;
 
 }
+
+.key-surface-del{
+    background-color: var(--key-bg-1);
+}
+
+.key-wrapper-del{
+    background-color: var(--key-bg-shadow-1);
+}
+
+.key-value-del{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.key-surface-equal{
+    background-color: var(--red);
+}
+
+.key-wrapper-equal{
+    background-color: var(--shadow-red);
+}
+
+.key-value-equal{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
