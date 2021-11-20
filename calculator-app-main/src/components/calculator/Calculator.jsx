@@ -2,7 +2,7 @@ import "./calculator.css";
 import Header from "../header/Header";
 import Screen from "../screen/Screen";
 import Keyboard from "../keyboard/Keyboard";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Calculator = () => {
   const [currentValue, setCurrentValue] = useState();
@@ -14,27 +14,22 @@ const Calculator = () => {
   const [firstValue, setFirstValue] = useState(0);
   const [operation, setOperation] = useState();
 
-  useEffect(() => {
+
     if (resetPressed) {
       setCurrentValue();
       setResetPressed(false);
       setCommaPressed(false);
     }
-  }, [resetPressed]);
 
-  useEffect(() => {
     if (delPressed) {
       const newValue = currentValue.toString().slice(0, -1);
       if (newValue.length === 0) setCurrentValue(0);
       else setCurrentValue(newValue);
       setDelPressed(false);
     }
-  }, [delPressed]);
-
-  useEffect(() => {
-     
-            if (keyPressed !== null) {
-            if (!currentValue && keyPressed !== ".") setCurrentValue(keyPressed);
+ 
+    if (keyPressed !== null) {
+        if (!currentValue && keyPressed !== ".") setCurrentValue(keyPressed);
             else {
                 if (keyPressed === '.' && commaPressed === false){
                     setCurrentValue(`${currentValue}${keyPressed}`);
@@ -43,41 +38,25 @@ const Calculator = () => {
                     if(keyPressed !=='.') setCurrentValue(`${currentValue}${keyPressed}`);
                  }
             }
+          setKeyPressed(null);
         }
-    setKeyPressed(null);
-  }, [keyPressed, currentValue]);
-
-  useEffect(() => {
-    setCommaPressed(false);
-    if (operationPressed === "add") {
+    
+   if(operationPressed !== null)
+    if (operationPressed === "add" || "sub" || "mult" || "div") {
       setFirstValue(currentValue);
       setCurrentValue(0);
-      setOperation("add");
-    }
-    if (operationPressed === "sub"){
-        setFirstValue(currentValue);
-        setCurrentValue(0);
-        setOperation("sub");
-    }
-    if (operationPressed === "mult"){
-        setFirstValue(currentValue);
-        setCurrentValue(0);
-        setOperation("mult");
-    }
-    if (operationPressed === "div"){
-        setFirstValue(currentValue);
-        setCurrentValue(0);
-        setOperation("div");
+      setOperation(operationPressed);
+      setOperationPressed(null);
+      setCommaPressed(false);
     }
     if (operationPressed === "equal"){
         if(operation==="add") setCurrentValue(parseFloat(firstValue)+ parseFloat(currentValue));
         if(operation==="sub") setCurrentValue(parseFloat(firstValue) - parseFloat(currentValue));
         if(operation==="mult") setCurrentValue(parseFloat(firstValue) * parseFloat(currentValue));
         if(operation==="div") setCurrentValue(parseFloat(firstValue) / parseFloat(currentValue));
+        setOperationPressed(null);
+        setCommaPressed(false);
     }
-  }, [operationPressed]);
-
-  const calculateValue = (value1, value2, operation) => {};
 
   return (
     <div className="c-main">

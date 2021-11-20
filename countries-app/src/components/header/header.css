@@ -1,0 +1,31 @@
+.h-main{
+    border-bottom: 2px solid #EEEEEE;
+    width: 100%;
+}
+
+.h-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.h-left{
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    padding-left: 4zx`0px;
+
+}
+
+.h-right{
+    display: flex;
+    padding-right: 56px;
+}
+
+.h-icon{
+    margin-right: 5px;
+}
+.h-text{
+    font-weight: 800;
+}
+

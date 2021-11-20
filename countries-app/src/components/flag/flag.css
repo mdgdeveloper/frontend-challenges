@@ -1,0 +1,33 @@
+.f-main{
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+.f-wrapper{
+    width: 320px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.f-info{
+    padding: 20px;
+}
+
+.f-img{
+    width: 100%;
+}
+
+.f-name{
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.f-info-detail{
+    display: flex;
+    font-size: 13px;
+}
+
+.f-info-title{
+    margin-right: 5px;
+    font-weight: 800;
+}

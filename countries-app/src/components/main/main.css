@@ -1,0 +1,13 @@
+.m-main{
+    background-color: var(--very-light-gray);
+    padding-left: 30px;
+}
+
+.m-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
